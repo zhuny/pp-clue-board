@@ -17,6 +17,16 @@
           v-bind:key="index"
         >
           <td>{{ index }}</td>
+          <td>
+            <select v-model="answer.token">
+              <option
+                v-for="token in rule.token_list"
+                v-bind:key="token.name"
+                v-bind:value="token.name"
+                >{{ token.name }}</option
+              >
+            </select>
+          </td>
         </tr>
       </tbody>
     </table>
