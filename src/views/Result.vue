@@ -35,9 +35,6 @@
 <script>
 export default {
   name: "Result",
-  created() {
-    console.log(this.people_list);
-  },
   computed: {
     element_group() {
       let element_list = [];
