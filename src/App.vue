@@ -47,4 +47,8 @@ table thead th {
 table tbody th {
   background: #48f0b0;
 }
+
+select {
+  width: 100%;
+}
 </style>
