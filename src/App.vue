@@ -5,7 +5,7 @@
       <router-link to="/result">표시</router-link> |
       <router-link to="/answer">답변</router-link>
     </div>
-    <router-view />
+    <router-view class="router-view" />
   </div>
 </template>
 
@@ -29,5 +29,10 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.router-view {
+  max-width: 480px;
+  margin: 0 auto;
 }
 </style>
