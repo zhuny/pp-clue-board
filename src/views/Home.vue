@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <ul>
-      <li v-bind:key="people" v-for="(people, index) in game_input.people_list">
+      <li v-bind:key="people.name" v-for="(people, index) in game_input.people_list">
         <span>{{ people.name }}</span>
         <button v-on:click="remove_people(index)" v-if="index > 0">삭제</button>
       </li>
