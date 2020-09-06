@@ -52,3 +52,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+table {
+  width: 100%;
+}
+
+table thead {
+  background: #42b983;
+}
+</style>
