@@ -16,7 +16,7 @@
           v-for="(answer, index) in game_input.answer_list"
           v-bind:key="index"
         >
-          <td>{{ index }}</td>
+          <th>{{ index }}</th>
           <td>
             <select v-model="answer.token">
               <option

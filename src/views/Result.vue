@@ -14,7 +14,7 @@
       </thead>
       <tbody>
         <tr v-for="(element, index) in element_group" v-bind:key="index">
-          <td>{{ element }}</td>
+          <th class="result-element">{{ element }}</th>
           <td
             v-for="(people, index) in game_input.people_list"
             v-bind:key="index"
@@ -52,13 +52,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-table {
-  width: 100%;
-}
-
-table thead {
-  background: #42b983;
-}
-</style>

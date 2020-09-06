@@ -35,4 +35,16 @@
   max-width: 480px;
   margin: 0 auto;
 }
+
+table {
+  width: 100%;
+}
+
+table thead th {
+  background: #42b983;
+}
+
+table tbody th {
+  background: #48f0b0;
+}
 </style>
