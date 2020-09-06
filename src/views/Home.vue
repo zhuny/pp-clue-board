@@ -6,11 +6,22 @@
         v-for="(people, index) in game_input.people_list"
       >
         <span class="people-name">{{ people.name }}</span>
-        <button v-on:click="remove_people(index)" v-if="index > 0">삭제</button>
+        <button
+          class="remove-people-btn"
+          v-on:click="remove_people(index)"
+          v-if="index > 0"
+        >
+          삭제
+        </button>
       </li>
       <li>
-        <input class="new-people-name" type="text" v-model="new_people" />
-        <button v-on:click="add_people()">추가</button>
+        <input
+          class="new-people-name"
+          type="text"
+          v-model="new_people"
+          placeholder="이름 입력"
+        />
+        <button class="add-people-btn" v-on:click="add_people()">추가</button>
       </li>
     </ul>
   </div>
@@ -52,6 +63,21 @@ ul li {
   border-radius: 100px;
 }
 
+ul li button {
+  padding: 0.25rem 0.5em;
+  border-radius: 100px;
+  border: none;
+}
+
+ul li button.remove-people-btn {
+  background: #d37233;
+  color: white;
+}
+
+ul li button.add-people-btn {
+  background: #4ad33d;
+}
+
 ul li span.people-name {
   flex: 1;
   text-align: left;
@@ -59,5 +85,6 @@ ul li span.people-name {
 
 ul li input.new-people-name {
   flex: 1;
+  border: none;
 }
 </style>
