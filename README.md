@@ -36,3 +36,40 @@
     * 각 셀마다 범인, 장소, 흉기를 선택할 수 있습니다.
 * Hour Three
     * 새로고침을 했을 때, 예전 기록을 불러올 수 있도록 설정합니다.
+    * CSS 달기
+
+# After
+* 첫번째 시간은 구성을 좀 빡빡하게 해서 10분 정도의 분량을 두번째 시간에 했다.
+* 두번째 시간은 반대로 10분 정도 빠르게 끝내서 쉬는 시간을 살짝 조정하였다.
+* 세번째 시간은 CSS를 하는 것을 이후에 추가했다.
+    * 당연히 CSS는 아웃풋 대비 시간을 오래 잡아먹는다.
+    * 어그로 안끌리는 연습을 해야겠다.
+
+# Development
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Infra
+참고하면 좋은 주소들
+* https://cloud.google.com/storage/docs/hosting-static-website-http
+* https://cloud.google.com/storage/docs/gsutil/commands/cp
