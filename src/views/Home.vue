@@ -28,7 +28,7 @@ export default {
       this.new_people = "";
     },
     remove_people(index) {
-      return index;
+      this.people_list.splice(index, 1);
     }
   }
 };
