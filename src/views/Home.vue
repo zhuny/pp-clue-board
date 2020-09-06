@@ -1,5 +1,9 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <ul>
+      <li v-for="people in people_list">{{ people }}</li>
+    </ul>
+  </div>
 </template>
 
 <script>
