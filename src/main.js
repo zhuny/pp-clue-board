@@ -2,13 +2,11 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import rule from "./rule";
+import {load_game_input} from "./game_input";
 
 Vue.config.productionTip = false;
 
-let game_input = {
-  people_list: [{ name: "나", answer: {} }],
-  answer_list: []
-};
+let game_input = load_game_input();
 
 Vue.mixin({
   data() {
