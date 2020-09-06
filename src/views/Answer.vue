@@ -90,3 +90,15 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+button {
+  padding: 0.25rem 0.5em;
+  border-radius: 100px;
+  border: none;
+  background: #4ad33d;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+</style>
