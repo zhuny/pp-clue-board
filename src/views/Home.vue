@@ -23,7 +23,10 @@ export default {
     };
   },
   methods: {
-    add_people() {},
+    add_people() {
+      this.people_list.push(this.new_people);
+      this.new_people = "";
+    },
     remove_people(index) {
       return index;
     }
