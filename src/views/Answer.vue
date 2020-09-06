@@ -27,6 +27,16 @@
               >
             </select>
           </td>
+          <td>
+            <select v-model="answer.weapon">
+              <option
+                v-for="weapon in rule.weapon_list"
+                v-bind:key="weapon"
+                v-bind:value="weapon"
+                >{{ weapon }}</option
+              >
+            </select>
+          </td>
         </tr>
       </tbody>
     </table>
