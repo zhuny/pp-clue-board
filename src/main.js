@@ -6,7 +6,8 @@ import rule from "./rule";
 Vue.config.productionTip = false;
 
 let game_input = {
-  people_list: [{ name: "나", answer: {} }]
+  people_list: [{ name: "나", answer: {} }],
+  answer_list: []
 };
 
 Vue.mixin({
