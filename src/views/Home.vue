@@ -1,13 +1,15 @@
 <template>
   <div class="home">
     <ul>
-      <li v-bind:key="people.name" v-for="(people, index) in game_input.people_list">
-        <span>{{ people.name }}</span>
+      <li
+        v-bind:key="people.name"
+        v-for="(people, index) in game_input.people_list"
+      >
+        <span class="people-name">{{ people.name }}</span>
         <button v-on:click="remove_people(index)" v-if="index > 0">삭제</button>
       </li>
       <li>
-        <label for="new_people">이름</label>
-        <input type="text" v-model="new_people" id="new_people" />
+        <input class="new-people-name" type="text" v-model="new_people" />
         <button v-on:click="add_people()">추가</button>
       </li>
     </ul>
@@ -36,3 +38,26 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: flex;
+  padding: 0.5rem 1rem;
+  border: 1px solid #42b983;
+  margin-bottom: 0.25rem;
+  border-radius: 100px;
+}
+
+ul li span.people-name {
+  flex: 1;
+  text-align: left;
+}
+
+ul li input.new-people-name {
+  flex: 1;
+}
+</style>
