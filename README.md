@@ -1,7 +1,7 @@
 # Clue Board
 보드게임 clue의 질문 기록 판
 * 첫번째 Popup Project
-* clue.zhuny.co.kr
+* http://clue.zhuny.co.kr
 
 # Scope
 * Page 1
