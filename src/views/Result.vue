@@ -4,7 +4,12 @@
       <thead>
         <tr>
           <th>물품</th>
-          <th v-bind:key="index" v-for="(people, index) in game_input.people_list">{{ people }}</th>
+          <th
+            v-bind:key="index"
+            v-for="(people, index) in game_input.people_list"
+          >
+            {{ people.name }}
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -13,7 +18,14 @@
           <td
             v-for="(people, index) in game_input.people_list"
             v-bind:key="index"
-          ></td>
+          >
+            <select v-model="people.answer[element]">
+              <option selected></option>
+              <option value="1">확정</option>
+              <option value="2">의심</option>
+              <option value="3">제외</option>
+            </select>
+          </td>
         </tr>
       </tbody>
     </table>
