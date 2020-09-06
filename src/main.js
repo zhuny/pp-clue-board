@@ -16,6 +16,14 @@ Vue.mixin({
       rule: rule,
       game_input: game_input
     };
+  },
+  watch: {
+    game_input: {
+      deep: true,
+      handler(val) {
+        localStorage.game_input = JSON.stringify(val);
+      }
+    }
   }
 });
 
