@@ -36,3 +36,27 @@
     * 각 셀마다 범인, 장소, 흉기를 선택할 수 있습니다.
 * Hour Three
     * 새로고침을 했을 때, 예전 기록을 불러올 수 있도록 설정합니다.
+
+# Development
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
