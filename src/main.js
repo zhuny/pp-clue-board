@@ -5,11 +5,16 @@ import rule from "./rule";
 
 Vue.config.productionTip = false;
 
+let game_input = {
+  people_list: ["나"],
+  answer: {}
+};
+
 Vue.mixin({
   data() {
     return {
-      people_list: ["나"],
-      rule: rule
+      rule: rule,
+      game_input: game_input
     };
   }
 });
