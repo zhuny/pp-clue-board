@@ -2,7 +2,7 @@
   <div class="home">
     <ul>
       <li v-bind:key="people" v-for="(people, index) in game_input.people_list">
-        <span>{{ people }}</span>
+        <span>{{ people.name }}</span>
         <button v-on:click="remove_people(index)" v-if="index > 0">삭제</button>
       </li>
       <li>
@@ -24,7 +24,10 @@ export default {
   },
   methods: {
     add_people() {
-      this.game_input.people_list.push(this.new_people);
+      this.game_input.people_list.push({
+        name: this.new_people,
+        answer: {}
+      });
       this.new_people = "";
     },
     remove_people(index) {
