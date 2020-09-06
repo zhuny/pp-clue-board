@@ -57,6 +57,16 @@
               >
             </select>
           </td>
+          <td>
+            <select v-model="answer.answerer">
+              <option
+                v-for="people in game_input.people_list"
+                v-bind:key="people.name"
+                v-bind:value="people.name"
+                >{{ people.name }}</option
+              >
+            </select>
+          </td>
         </tr>
       </tbody>
     </table>
