@@ -37,6 +37,16 @@
               >
             </select>
           </td>
+          <td>
+            <select v-model="answer.room">
+              <option
+                v-for="room in rule.room_list"
+                v-bind:key="room"
+                v-bind:value="room"
+                >{{ room }}</option
+              >
+            </select>
+          </td>
         </tr>
       </tbody>
     </table>
