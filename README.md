@@ -68,3 +68,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Infra
+참고하면 좋은 주소들
+* https://cloud.google.com/storage/docs/hosting-static-website-http
+* https://cloud.google.com/storage/docs/gsutil/commands/cp
